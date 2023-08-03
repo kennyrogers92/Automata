@@ -1,0 +1,23 @@
+digraph {
+	center=True fontsize="11pt" label="Deterministic Finite Automaton (DFA) at 0x18ff588ef10" labelloc=t rankdir=LR
+	entry [label="" shape=none]
+	"('q1', 'r')" [label="(q1, r)" fixedsize=False fontname="Helvetica,Arial,sans-serif" fontsize="9pt" shape=circle]
+	"('q1', 'r0')" [label="(q1, r0)" fixedsize=False fontname="Helvetica,Arial,sans-serif" fontsize="9pt" shape=circle]
+	"('q0', 'r')" [label="(q0, r)" fixedsize=False fontname="Helvetica,Arial,sans-serif" fontsize="9pt" shape=circle]
+	"('q', 'r0')" [label="(q, r0)" fixedsize=False fontname="Helvetica,Arial,sans-serif" fontsize="9pt" shape=circle]
+	"('q', 'r')" [label="(q, r)" fixedsize=False fontname="Helvetica,Arial,sans-serif" fontsize="9pt" shape=circle]
+	"('q0', 'r0')" [label="(q0, r0)" fixedsize=False fontname="Helvetica,Arial,sans-serif" fontsize="9pt" shape=doublecircle]
+	entry -> "('q', 'r')" [arrowhead=vee arrowsize=0.25]
+	"('q1', 'r')" -> "('q1', 'r0')" [label=0 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q1', 'r')" -> "('q1', 'r')" [label=1 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q1', 'r0')" -> "('q1', 'r0')" [label=0 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q1', 'r0')" -> "('q1', 'r')" [label=1 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q0', 'r')" -> "('q0', 'r0')" [label=0 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q0', 'r')" -> "('q0', 'r')" [label=1 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q0', 'r0')" -> "('q0', 'r0')" [label=0 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q0', 'r0')" -> "('q0', 'r')" [label=1 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q', 'r0')" -> "('q0', 'r0')" [label=0 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q', 'r0')" -> "('q1', 'r')" [label=1 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q', 'r')" -> "('q0', 'r0')" [label=0 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+	"('q', 'r')" -> "('q1', 'r')" [label=1 arrowhead=vee arrowsize=0.25 fontname="Helvetica,Arial,sans-serif" fontsize="9pt"]
+}
